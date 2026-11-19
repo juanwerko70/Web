@@ -9,7 +9,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends unzip \
     && rm -rf /var/lib/apt/lists/*
 
-COPY CART3R_JAILBREAK_HaloDev_V2.zip /tmp/cart3r.zip
+COPY CART3R_JAILBREAK_HaloAI_V4_CodeLab.zip /tmp/cart3r.zip
 
 RUN mkdir -p /app/src \
     && unzip -q /tmp/cart3r.zip -d /app/src \
